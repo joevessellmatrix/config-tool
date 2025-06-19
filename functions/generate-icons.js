@@ -11,11 +11,17 @@ function generateIcons(id, icons) {
           ${item.icons
             .map(
               (it) => `
-              <card-small>
+              ${it.card === "large" ? "<card-large>" : "<card-small>"}
                   <div slot="object">
                       <div class="pl-grid-svg-preview ${
                         it.style && it.style === "dark" && "dark-preview"
-                      } ${it.style && it.style === "large" && "large-preview"}">
+                      } ${
+                it.style && it.style === "large" && "large-preview"
+              } ${
+                it.style &&
+                it.style === "large+dark" &&
+                "dark-preview large-preview"
+              }">
                       <img src="images/icons/${it.value}"/>
                       </div>
                   </div>
@@ -26,7 +32,8 @@ function generateIcons(id, icons) {
                   <span slot="code">
                       ${it.value}
                   </span>	
-              </card-small>`
+                  ${it.card === "large" ? "</card-large>" : "</card-small>"}
+              `
             )
             .join("")}
       `

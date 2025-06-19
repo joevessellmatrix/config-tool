@@ -2,6 +2,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
 main.pl,
 header.pl {
   max-width: 1400px;
@@ -30,6 +36,16 @@ h3.pl {
   grid-column: 1 / -1;
 }
 
+.pl-grid card-large {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .pl-grid card-large {
+    grid-column: span 1;
+  }
+}
+
 .pl-section-description {
   display: flex;
   flex-direction: column;
@@ -54,9 +70,18 @@ h3.pl {
   height: 150px;
 }
 
-.large-preview img {
-  height: 150px !important;
-  width: auto !important;
+.large-preview.dark-preview {
+  background-color: #05a4db;
+}
+
+card-small .large-preview img {
+  height: 150px;
+  width: auto;
+}
+
+card-large .large-preview img {
+  height: auto;
+  width: 100%;
 }
 
 .pl-grid-svg-preview img {

@@ -10,6 +10,8 @@
 
     <!-- Pattern Library -->
     <script src="./library-pattern/card-small.js"></script>
+    <script src="./library-pattern/card-large.js"></script>
+
     <link href="./library-pattern/styles.css" rel="stylesheet" />
 
     <!-- Data -->
@@ -18,6 +20,9 @@
 
     <script src="data/icons.js"></script>
     <script src="functions/generate-icons.js"></script>
+
+    <script src="data/typography.js"></script>
+    <script src="functions/generate-typography.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,6 +54,15 @@
         <script>
           document.addEventListener("DOMContentLoaded", () => {
             generateIcons("icons", icons);
+          });
+        </script>
+      </section>
+      <section class="pl">
+        <h2 class="pl">Typography</h2>
+        <div id="typography" class="pl-grid"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            generateTypography("typography", typography);
           });
         </script>
       </section>

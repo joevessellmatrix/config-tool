@@ -10,7 +10,7 @@ const icons = [
         value: "chevron-down.svg",
         notes: [
           "input selection",
-          "<a href='images/icons/chevron-down.svg' download>Download</a>",
+          "<a href='images/icons/chevron-down.svg' download >Download</a>",
         ],
       },
       {
@@ -125,32 +125,32 @@ const icons = [
     details: "Company Logos",
     dimensions: "",
     icons: [
-      // {
-      //   name: "Black Text",
-      //   value: "logos/accelguard-logo-black.png",
-      //   style: "large",
-      //   notes: [
-      //     "application header 200 x 55",
-      //     "application login page 300 x 85",
-      //     "<a href='images/logos/accelguard-logo-black.png' download>Download</a>",
-      //   ],
-      // },
-      // {
-      //   name: "White Text",
-      //   value: "logos/accelguard-logo-white.png",
-      //   style: "large",
-      //   notes: [
-      //     "application login page 300 x 85",
-      //     "<a href='images/logos/accelguard-logo-white.png' download>Download</a>",
-      //   ],
-      // },
+      {
+        name: "Black Text",
+        value: "logos/accelguard-logo-black.png",
+        card: "large",
+        style: "large",
+        notes: [
+          "application header 200 x 55",
+          "<a href='images/logos/accelguard-logo-black.png' download>Download</a>",
+        ],
+      },
+      {
+        name: "White Text",
+        value: "logos/accelguard-logo-white.png",
+        card: "large",
+        style: "large+dark",
+        notes: [
+          "application login page 300 x 85",
+          "<a href='images/logos/accelguard-logo-white.png' download>Download</a>",
+        ],
+      },
       {
         name: "Icon",
         style: "large",
         value: "logos/accelguard-icon.png",
         notes: [
-          "application header 200 x 55",
-          "application login page 300 x 85",
+          "application icon",
           "<a href='images/logos/accelguard-icon.png' download>Download</a>",
         ],
       },

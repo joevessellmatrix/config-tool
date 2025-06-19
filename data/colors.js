@@ -93,6 +93,17 @@ const colors = [
     ],
   },
   {
+    title: "OmniPro",
+    colors: [
+      {
+        name: "OmniPro 500",
+        value: "--color-omnipro-500",
+        color: "05A4DB",
+        notes: ["Login page background color"],
+      },
+    ],
+  },
+  {
     title: "Reds",
     colors: [
       {
