@@ -68,6 +68,7 @@ h3.pl {
 
 .large-preview {
   height: 150px;
+  overflow: hidden;
 }
 
 .large-preview.dark-preview {

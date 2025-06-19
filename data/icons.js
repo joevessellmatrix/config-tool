@@ -94,28 +94,28 @@ const icons = [
     icons: [
       {
         name: "Blue Loader",
-        value: "spin-blue.gif",
+        value: "loaders/spin-blue.gif",
         notes: [
           "loading indicator for secondary button",
-          "<a href='images/loaders/spin-blue.gif' download>Download</a>",
+          "<a href='images/icons/loaders/spin-blue.gif' download>Download</a>",
         ],
       },
       {
         name: "White Loader",
-        value: "spin-white.gif",
+        value: "loaders/spin-white.gif",
         style: "dark",
         notes: [
           "loading indicator for primary button",
-          "<a href='images/loaders/spin-white.gif' download>Download</a>",
+          "<a href='images/icons/loaders/spin-white.gif' download>Download</a>",
         ],
       },
       {
         name: "Page Loader",
-        value: "page-loader.gif",
+        value: "loaders/page-loader.gif",
         style: "large",
         notes: [
           "loading page",
-          "<a href='images/loaders/page-loader.gif' download>Download</a>",
+          "<a href='images/icons/loaders/page-loader.gif' download>Download</a>",
         ],
       },
     ],
@@ -132,7 +132,7 @@ const icons = [
         style: "large",
         notes: [
           "application header 200 x 55",
-          "<a href='images/logos/accelguard-logo-black.png' download>Download</a>",
+          "<a href='images/icons/logos/accelguard-logo-black.png' download>Download</a>",
         ],
       },
       {
@@ -142,7 +142,7 @@ const icons = [
         style: "large+dark",
         notes: [
           "application login page 300 x 85",
-          "<a href='images/logos/accelguard-logo-white.png' download>Download</a>",
+          "<a href='images/icons/logos/accelguard-logo-white.png' download>Download</a>",
         ],
       },
       {
@@ -151,7 +151,24 @@ const icons = [
         value: "logos/accelguard-icon.png",
         notes: [
           "application icon",
-          "<a href='images/logos/accelguard-icon.png' download>Download</a>",
+          "<a href='images/icons/logos/accelguard-icon.png' download>Download</a>",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Images",
+    details: "",
+    dimensions: "",
+    icons: [
+      {
+        name: "Login Background",
+        value: "logos/omnipro-login-background.png",
+        card: "large",
+        style: "large+dark",
+        notes: [
+          "Login page background image",
+          "<a href='images/icons/logos/omnipro-login-background.png' download >Download</a>",
         ],
       },
     ],
