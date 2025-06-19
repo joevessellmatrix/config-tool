@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main.pl,
+header.pl {
+  max-width: 1400px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h3.pl {
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.pl-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.pl-grid h3,
+.pl-grid small,
+.pl-section-description {
+  grid-column: 1 / -1;
+}
+
+.pl-section-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.pl-grid-color-preview,
+.pl-grid-svg-preview,
+.pl-grid-space-preview {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-preview {
+  background-color: #006afe;
+}
+
+.large-preview {
+  height: 150px;
+}
+
+.large-preview img {
+  height: 150px !important;
+  width: auto !important;
+}
+
+.pl-grid-svg-preview img {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+
+.pl-grid-space-preview .space-box {
+  background-color: #8cbcff;
+}
+
+.pl-grid-border-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pl-grid-border-preview .space-box {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.pl-layouts-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: start;
+}

@@ -1,3 +1,58 @@
-<html>
-  <p>Testing Change</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pattern Library -->
+    <script src="./library-pattern/card-small.js"></script>
+    <link href="./library-pattern/styles.css" rel="stylesheet" />
+
+    <!-- Data -->
+    <script src="data/colors.js"></script>
+    <script src="functions/generate-colors.js"></script>
+
+    <script src="data/icons.js"></script>
+    <script src="functions/generate-icons.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Config Tool App</title>
+  </head>
+  <body>
+    <header class="pl"><h1>Config Tool App / AccelGuard</h1></header>
+    <main class="pl">
+      <section class="pl">
+        <h2>Colors</h2>
+        <small class="pl">
+          <span>General number naming</span>
+          <ul>
+            <li>2 - 50: background colors</li>
+            <li>50 - 600: icons, decocrative items and border colors</li>
+            <li>600 - 950: text WCAG AA level contrast ratio colors</li>
+          </ul>
+        </small>
+        <div id="colors" class="pl-grid"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            generateColors("colors", colors);
+          });
+        </script>
+      </section>
+      <section class="pl">
+        <h2 class="pl">Icons</h2>
+        <div id="icons" class="pl-grid"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            generateIcons("icons", icons);
+          });
+        </script>
+      </section>
+    </main>
+    <!-- <footer>Footer Information</footer> -->
+  </body>
 </html>
